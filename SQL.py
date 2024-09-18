@@ -71,18 +71,11 @@ execute_button.pack(padx=10, pady=5)
 
 table_frame = tk.Frame(root)
 table_frame.pack(padx=10, pady=5, expand=True, fill='both')
-
-# Vytvoření tabulky pro zobrazení výsledků
 table = ttk.Treeview(table_frame)
-
-# Vytvoření vertikálního posuvníku a jeho propojení s tabulkou
 y_scrollbar = ttk.Scrollbar(table_frame, orient="vertical", command=table.yview)
 table.configure(yscrollcommand=y_scrollbar.set)
-
-# Umístění posuvníku a tabulky do rámce
 y_scrollbar.pack(side="right", fill="y")
 table.pack(side="top", fill="both", expand=True)
-
 root.mainloop()
 
 conn.close()
