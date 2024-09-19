@@ -55,7 +55,7 @@ df = open_file(file_name)
 if df is not None:
     df.to_sql(file_name.split(".")[0], conn, if_exists="replace", index=False)
 else:
-    print("Dataset is empty.")
+    print("Empty dataset")
     sys.exit(1)
 
 root = tk.Tk()
