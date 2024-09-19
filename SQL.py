@@ -28,7 +28,7 @@ def execute_query():
         result = pd.read_sql_query(query, conn)
         update_table(result)
     except Exception as e:
-        messagebox.showerror("Error", f"Error: {e}")
+        messagebox.showerror(f"Error: {e}")
 
 def update_table(df):
     for row in table.get_children():
