@@ -42,9 +42,7 @@ python SQL.py data.xlsx
 
 1. **Opening the File:** The script detects the file type based on its extension (`.xlsx`, `.csv`, `.json`, or `.txt`) and loads the data into a pandas DataFrame.
 2. **Loading Data into SQLite:** The data is transferred to an in-memory SQLite database, making it available for SQL queries.
-3. **Graphical Interface:** The Tkinter GUI allows users to enter SQL queries and view results in a table format with vertical scrolling.
-
-Note that snake_case (or camelCase) names of columns are needed.  
+3. **Graphical Interface:** The Tkinter GUI allows users to enter SQL queries and view results in a table format with vertical scrolling.  
 
 ## Handling Errors
 
@@ -55,3 +53,4 @@ Note that snake_case (or camelCase) names of columns are needed.
 
 - The script currently supports `.xlsx`, `.csv`, `.json`, and `.txt` files. Additional file formats may require modifications to the code.
 - Data is stored in memory, which may affect performance with very large datasets.
+- snake_case/camelCase names of columns are needed.
