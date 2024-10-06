@@ -44,6 +44,8 @@ python SQL.py data.xlsx
 2. **Loading Data into SQLite:** The data is transferred to an in-memory SQLite database, making it available for SQL queries.
 3. **Graphical Interface:** The Tkinter GUI allows users to enter SQL queries and view results in a table format with vertical scrolling.
 
+Note that snake_case (or camelCase) names of columns are needed.  
+
 ## Handling Errors
 
 - If the script is run without the required arguments, it will display a usage message and exit.
